@@ -4,7 +4,7 @@ import { findByTestAttr } from '../../utils/testUtils';
 import Congrats from './Congrats';
 
 const setup = (props={}) => {
-    return shallow(<Congrats success {...props}/>)
+    return shallow(<Congrats {...props}/>)
 }
 
 test('render without error', () => {

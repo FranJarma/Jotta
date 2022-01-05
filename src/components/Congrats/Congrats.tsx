@@ -4,21 +4,17 @@ interface CongratsProps {
     success: boolean
 }
 
-const Congrats = (props: CongratsProps): JSX.Element => {
+const Congrats = (): JSX.Element => {
 
     const [ alert, setAlert ] = useState<boolean>(false);
 
-    if(props.success) {
-        return (
-            <>
-            </>
-        )
-    }
-    else {
-        return (
-            <></>
-        )
-    }
+    return (
+        <>
+        <div className="alert-success">
+            Congratulations! You won
+        </div>
+        </>
+    )
     
 }
 

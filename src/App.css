@@ -11,6 +11,31 @@
     font-size: 50px;
   }
 }
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
 * {
   background-color: #181818;
   color: #fff;
@@ -19,16 +44,19 @@
 }
 
 h1 {
+  background-color: indigo;
   font-size: 60px;
 }
 
-header * {
-  background-color: green;
+header {
+  background-color: indigo;
+  border-bottom: 1px solid #fff;
   text-align: center;
   padding: 25px 25px 25px 25px;
 }
 
 header p {
+  background-color: indigo;
   font-size: 25px;
 }
 .container *{
@@ -49,33 +77,20 @@ header p {
   color: #181818
 }
 .container button {
-  background-color: green;
+  background-color: indigo;
   text-transform: uppercase;
 }
 
 .alert-success {
   background-color: green;
   text-align: center;
-  backdrop-filter: blur(2px);
   padding: 25px 25px 25px 25px;
-}
-
-.alert-success h3 {
-  background-color: green;
-  font-size: 50px;
-}
-
-.alert-success p {
-  background-color: green;
   font-size: 25px;
-  text-align: center;
-}
-
-.alert-success span {
-  cursor: pointer;
-  background-color: green;
-  font-size: 25px;
-  float: right;
+  animation: fadeIn 2s;
+  -webkit-animation: fadeIn 2s;
+  -moz-animation: fadeIn 2s;
+  -o-animation: fadeIn 2s;
+  -ms-animation: fadeIn 2s;
 }
 
 ol {
@@ -97,7 +112,7 @@ ol a {
 }
 
 ol a span {
-  background-color: green;
+  background-color: indigo;
 }
 
 ol a:hover {background: #58585a;}       
@@ -108,7 +123,7 @@ ol a:before {
   left: -2.5em;
   top: 50%;
   margin-top: -1em;
-  background: green;
+  background: indigo;
   height: 2em;
   width: 2em;
   line-height: 2em;
@@ -128,7 +143,7 @@ ol a:after {
 
 ol a:hover:after {
   left: -.5em;
-  border-left-color: green;
+  border-left-color: indigo;
 }
     
 
